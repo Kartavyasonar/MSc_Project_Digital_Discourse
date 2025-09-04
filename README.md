@@ -50,6 +50,7 @@ MSc_Project_Digital_Discourse/
 │   └── analyze_results.py
 │
 └── app.py              # The main script to launch the Streamlit dashboard
+```
 ---
 
 ## 🛠️ Setup and Installation
@@ -59,23 +60,25 @@ To run this project, you will need **Python 3.10** or higher and **Git** install
 ### 1. Clone the Repository
 
 First, clone this repository to your local machine using Git:
-
+```
 ```bash
 git clone git clone https://github.com/your-username/MSc_Project_Digital_Discourse.git
 cd MSc_Project_Digital_Discourse
+```
 ### 2. Create a Virtual Environment
 It is highly recommended to use a virtual environment to manage project dependencies and avoid conflicts with other Python projects.
-
+```
 **On Windows:**
 ```bash
 python -m venv venv
 venv\Scripts\activate
-
+```
+```
 **On macOS/Linux:**
 ```bash
 python3 -m venv venv
 source venv/bin/activate
-
+```
 You should now see `(venv)` at the beginning of your command prompt line.
 
 ### 3. Install Required Libraries
@@ -84,7 +87,7 @@ Install all the required Python libraries from the `requirements.txt` file using
 ```bash
 pip install -r requirements.txt
 
-
+```
 This command will automatically download and install all the necessary packages, such as pandas, praw, streamlit, bertopic, transformers, and their dependencies.
 
 ### 4. NLTK Data Download
@@ -94,7 +97,7 @@ The project uses the NLTK library for text processing. The first time you run th
 import nltk
 nltk.download('punkt')
 nltk.download('stopwords')
-
+```
 You should now see (venv) at the beginning of your command prompt line.
 
 ## 🚀 Usage and Reproducibility
@@ -105,7 +108,7 @@ Scrape the latest data from Reddit and UK government websites.
 
 ```bash
 python src/collect_data.py
-
+```
 **Output:** `data/raw/reddit_scraped_posts.csv`, `data/raw/uk_legislation.csv`
 
 ---
@@ -117,6 +120,7 @@ Clean the raw data, apply final topic labels, and merge into dashboard-ready dat
 
 ```bash
 python src/process_data.py
+```
 **Input:**  
 - `data/raw/reddit_scraped_posts.csv`  
 - `data/processed/reddit_with_topics.csv`  
@@ -134,7 +138,7 @@ python src/process_data.py
 Run topic modeling, emotion detection, and topic-legislation mapping.
 ```bash
 python src/train_models.py
-
+```
 **Input:** `data/processed/reddit_cleaned.csv`  
 **Output:**  
 - `data/processed/reddit_with_topics.csv`  
@@ -148,7 +152,7 @@ python src/train_models.py
 Generate all visualisations (plots, heatmaps) and summary tables.
 ```bash
 python src/analyze_results.py
-
+```
 
 **Input:** `data/processed/reddit_dashboard_data.csv`  
 **Output:** Figures saved in `reports/figures/`
@@ -160,7 +164,7 @@ python src/analyze_results.py
 Start the Streamlit web application.
 ```bash
 streamlit run app.py
-
+```
 This will start a local web server and open the interactive dashboard in your default browser. 📊
 
 ---
