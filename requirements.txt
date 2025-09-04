@@ -1,0 +1,38 @@
+# Core Data Handling
+pandas==1.5.3
+numpy==1.24.3
+
+# Web Scraping
+praw==7.7.1
+beautifulsoup4==4.12.2
+requests==2.31.0
+
+# NLP Preprocessing
+nltk==3.8.1
+regex==2023.10.3
+
+# Embeddings & Topic Modeling
+sentence-transformers==2.2.2
+bertopic==0.15.0
+umap-learn==0.5.3
+hdbscan==0.8.33
+
+# Experimental Hashing
+datasketch==1.5.9   
+
+# Emotion Detection / Transformers
+transformers==4.30.2
+torch==2.0.1
+scikit-learn==1.2.2
+
+# Visualisation
+matplotlib==3.7.2
+seaborn==0.12.2
+wordcloud==1.9.3
+
+# Dashboard
+streamlit==1.26.0
+
+# Utility
+tqdm==4.66.1
+pyyaml==6.0.1
