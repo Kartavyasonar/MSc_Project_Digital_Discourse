@@ -24,6 +24,7 @@ The project investigates the public discourse surrounding the UK's move to a dig
 ## 📁 Project Structure
 
 This repository follows a standard data science project structure to ensure clarity, modularity, and reproducibility.
+```
 MSc_Project_Digital_Discourse/
 │
 ├── .gitignore          # Specifies files and folders for Git to ignore
