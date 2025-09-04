@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Analysis of Digital Immigration Discourse on Reddit using NLP and LLM Techniques
 
 **MSc Advanced Computer Science Project | University of Leeds | 2024/2025**
