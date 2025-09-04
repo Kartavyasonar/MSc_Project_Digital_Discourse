@@ -60,20 +60,20 @@ To run this project, you will need **Python 3.10** or higher and **Git** install
 ### 1. Clone the Repository
 
 First, clone this repository to your local machine using Git:
-```
+
 ```bash
 git clone git clone https://github.com/your-username/MSc_Project_Digital_Discourse.git
 cd MSc_Project_Digital_Discourse
 ```
 ### 2. Create a Virtual Environment
 It is highly recommended to use a virtual environment to manage project dependencies and avoid conflicts with other Python projects.
-```
+
 **On Windows:**
 ```bash
 python -m venv venv
 venv\Scripts\activate
 ```
-```
+
 **On macOS/Linux:**
 ```bash
 python3 -m venv venv
